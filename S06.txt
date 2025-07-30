@@ -1,0 +1,12 @@
+1:45:00
+
+
+Standard I/O "Input, Output and Error"
+-Standard input = 0
+-Standard output = 1
+-Standard error = 2
+#to redirect the output to file ">" "ls -l > newfile"
+#to append the output to file ">>" "ls -l >> file"
+to append the output or error to same file "ls -l >> file 2>&1"
+to append the output to file and error to another file "ls -l >> file 2>> errorfile"
+

@@ -1,0 +1,43 @@
+2:20:00
+find / -inum "133"
+ls -lid /directory
+
+no hard link for directories just for files
+hard link must be in the same hard file system
+new hard link name must doesn't exist
+hard link use cases (backup important files from mistake deleting - file exist in dir that file many users have different permssions)
+ln file1 file2 
+
+soft link recommended to type the full path to the original file
+soft link can be exist in different hard file system
+ln -s /home/file1 file2
+
+
+
+---------------------------
+vi
+Command mode - insert mode - last time or exit mode - 
+copy (yy)
+paste (P - p)
+undo (u)
+newline (O - o)
+delete
+character (x)
+word (dw)
+line (dd)
+
+last time mode
+:q
+:q!
+:wq
+:wq!
+replace all (:%s/old/new)
+replace just one cursor exist (:s/old/new)
+search (/word)
+save and exit (ZZ)
+going to line number (40G) last line (G)
+delete all file content (:%d)
+to adjust spaces(:set paste)
+numbering (:set number)
+to make numbering the default 1-go to home directory (cd `) 2-create .vimrcfile (vi .vimrc) 3-make set number option and save (setnumber)
+to replace word without open it sed -i 's/user100/user1' /etc/passwd
